@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Didact+Gothic&family=Fredoka+One&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Didact+Gothic&family=Fredoka+One&family=Kalam&family=Poppins:wght@300&display=swap');
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!---------------------------------------  body --------------------------------------->
+
+    <!-- section-one -->
+    <div class="container-fluid">
+        <div class="d-none d-lg-inline containerRelative">
+            <div class="row">
+
+                <a href="#" class="col-lg-4 bgArea1">
+                    <div class="">
+                        <p class="FirstSectionTexts">Cultures</p>
+                    </div>
+                </a>
+
+                <a href="#" class="col-lg-4 bgArea2">
+                    <div class="">
+                        <p class="FirstSectionTexts">Foods And Drinks</p>
+                    </div>
+                </a>
+
+                <a href="#" class="col-lg-4 bgArea3">
+                    <div class="">
+                        <p class="FirstSectionTexts">Geography</p>
+                    </div>
+                </a>
+
+            </div>
+
+            <div class="MainText">
+                Let's Explore Myanmar
+            </div>
+
+            <!-- navbar for pc screen -->
+            <nav class="d-none d-lg-flex d-md-flex sticky-top container-fluid NavG" id="nav">
+
+                <div class="col navbar d-md-flex">
+                    <h2 class="ms-1 logo navText-B">LOGO</h2>
+                </div>
+
+                <div class="navbar navbar-light col lgNav ms-3">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link navText" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navText" href="#">More Content</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col navbar d-md-none d-lg-flex d-none">
+                    <button class="btn btn-outline-primary btn-sm gs">Log In</button>
+                    <button class="btn btn-outline-primary btn-sm ms-2">Sign Up</button>
+                </div>
+            </nav>
+
+        </div>
+    </div>
+
+
+    <!-- for phones -->
+    <div id="section1-slide" class="carousel slide d-inline d-lg-none carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <a href="#" class="col-12 bgArea1-s carousel-item active">
+                <div class="">
+                    <button class="btn btn-outline-light mx-2 my-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="MainText-s">
+                        Let's Explore Myanmar
+                    </div>
+                    <p class="FirstSectionTexts ms-1">Cultures</p>
+                </div>
+            </a>
+
+            <a href="#" class="col-12 bgArea2-s carousel-item">
+                <div class="">
+                    <button class="btn btn-outline-light mx-2 my-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="MainText-s">
+                        Let's Explore Myanmar
+                    </div>
+                    <p class="FirstSectionTexts ms-1">Foods And Drinks</p>
+                </div>
+            </a>
+
+            <a href="#" class="col-12 bgArea3-s carousel-item">
+                <div class="">
+                    <button class="btn btn-outline-light mx-2 my-2" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="MainText-s">
+                        Let's Explore Myanmar
+                    </div>
+                    <p class="FirstSectionTexts ms-1">Geography</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- navbar for mobile screen -->
+
+
+    <div class="offcanvas offcanvas-start d-inline d-lg-none" tabindex="-1" id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <!-- section-two cards-->
+    <!-- <nav class="d-none d-lg-flex d-md-flex sticky-top container-fluid NavG" id="nav">
+
+        <div class="col navbar d-md-flex">
+            <h2 class="ms-4 logo">LOGO</h2>
+        </div>
+
+        <div class="navbar navbar-light col lgNav ms-3">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link navText" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navText" href="#">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navText" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navText" href="#">More Content</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col navbar d-md-none d-lg-flex d-none">
+            <button class="btn btn-outline-primary btn-sm gs">Log In</button>
+            <button class="btn btn-outline-primary btn-sm ms-2">Sign Up</button>
+        </div>
+    </nav> -->
+
+    <div class="container-fluid mt-3 mt-lg-5" id="section-2">
+
+        <!-- heading-container -->
+        <div class="s2-heading-con container text-center">
+            <p class="text-secondary bold-text sub-sm-headings">TOURIST ATTRACTIONS</p>
+            <h2 class="bold-text sub-lg-headings">Places to Visit</h2>
+        </div>
+
+        <!-- card-section-container -->
+        <div class="container d-none d-lg-block lg-card flex-center">
+
+            <!-- slide -->
+            <div id="slide-lg-s1" class="carousel slide" data-bs-touch="true">
+                <div class="carousel-inner">
+
+                    <!-- first-slide-group -->
+                    <div class="carousel-item active">
+                        <div class="row s2-card-con mx-5">
+
+                            <!-- first-slide-card-one -->
+                            <a href="#"
+                                class="col-lg-5 col-xl-3 col-12 mt-4 d-lg-flex justify-content-center card-link">
+                                <div class="card card-lg rounded-4 s2-cards">
+                                    <img src="islands.jfif" class="card-img-top s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+
+                                        Mergui Archipelago
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- first-slide-card-two -->
+                            <a href="#"
+                                class="col-lg-5 col-xl-3 col-12 mt-4 d-lg-flex justify-content-center card-link">
+                                <div class="card card-lg rounded-4 s2-cards">
+                                    <img src="inle.jfif" class="card-img-top  s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        Inle Lake
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- first-slide-card-three -->
+                            <a href="#"
+                                class="col-lg-5 col-xl-3 col-12 mt-4 d-lg-flex justify-content-center card-link">
+                                <div class="card card-lg rounded-4 s2-cards">
+                                    <img src="bagan.jfif" class="card-img-top  s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        Temples of Bagan
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- first-slide-card-four -->
+                            <a href="#"
+                                class="col-lg-5 col-xl-3 col-12 mt-4 d-lg-flex justify-content-center card-link">
+                                <div class="card card-lg rounded-4 s2-cards">
+                                    <img src="goldenrock.jfif" class="card-img-top s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        Golden Rock
+                                    </div>
+                                </div>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- second-slide-group -->
+                    <div class="carousel-item me-auto ms-auto">
+                        <div class="row s2-card-con mx-5">
+
+                            <!-- second-slide-card-one -->
+                            <a href="#"
+                                class="col-lg-5 col-xl-3 col-12 mt-4 d-lg-flex justify-content-center card-link">
+                                <div class="card card-lg rounded-4 s2-cards">
+                                    <img src="shwe.jfif" class="card-img-top s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        Shwedagon
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- second-slide-card-two -->
+                            <a href="#"
+                                class="col-lg-5 col-xl-3 col-12 mt-4 d-lg-flex justify-content-center card-link">
+                                <div class="card card-lg rounded-4 s2-cards">
+                                    <img src="popa.jfif" class="card-img-top s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        Mount Popa
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- second-slide-card-three -->
+                            <a href="#"
+                                class="col-lg-5 col-xl-3 col-12 mt-4 d-lg-flex justify-content-center card-link">
+                                <div class="card card-lg rounded-4 s2-cards">
+                                    <img src="saddar.jfif" class="card-img-top s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        Saddar Cave
+                                    </div>
+                                </div>
+                            </a>
+
+                            <!-- second-slide-card-four -->
+                            <a href="#"
+                                class="col-lg-5 col-xl-3 col-12 mt-4 d-lg-flex justify-content-center card-link">
+                                <div class="card card-lg rounded-4 s2-cards">
+                                    <img src="ubein1.jfif" class="card-img-top s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        U Bein Bridge
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- left-right slide-button -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#slide-lg-s1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#slide-lg-s1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+
+            </div>
+
+
+
+
+        </div>
+
+        <!-- slide for small sizes -->
+        <div class="container d-inline-block d-lg-none">
+            <div class="row ">
+                <div id="slide-sm-s1" class="carousel slide" data-bs-touch="true">
+
+                    <!-- slide -->
+                    <div class="carousel-inner">
+
+                        <!-- slide-one -->
+                        <div class="carousel-item active">
+                            <a href="#"
+                                class="col-lg-3 col-12 col-md-5 mt-4 d-lg-flex justify-content-center card-link sm-slide">
+                                <div class="card rounded-4 s2-cards">
+                                    <img src="islands.jfif" class="card-img-top s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        Mergui Archipelago
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- slide-two -->
+                        <div class="carousel-item">
+                            <a href="#"
+                                class="col-lg-3 col-12 col-md-5 mt-4 d-lg-flex justify-content-center card-link sm-slide">
+                                <div class="card rounded-4 s2-cards">
+                                    <img src="inle.jfif" class="card-img-top  s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        Inle Lake
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- slide-three -->
+                        <div class="carousel-item">
+                            <a href="#"
+                                class="col-lg-3 col-12 col-md-5 mt-4 d-lg-flex justify-content-center card-link sm-slide">
+                                <div class="card rounded-4 s2-cards">
+                                    <img src="bagan.jfif" class="card-img-top  s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        Temples of
+                                        Bagan
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- slide-four -->
+                        <div class="carousel-item">
+                            <a href="#"
+                                class="col-lg-3 col-12 col-md-5 mt-4 d-lg-flex justify-content-center card-link sm-slide">
+                                <div class="card rounded-4 s2-cards">
+                                    <img src="goldenrock.jfif" class="card-img-top s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        Golden Rock
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- slide-five -->
+                        <div class="carousel-item">
+                            <a href="#"
+                                class="col-lg-3 col-12 col-md-5 mt-4 d-lg-flex justify-content-center card-link sm-slide">
+                                <div class="card rounded-4 s2-cards">
+                                    <img src="shwe.jfif" class="card-img-top s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        Shwedagon
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- slide-six -->
+                        <div class="carousel-item">
+                            <a href="#"
+                                class="col-lg-3 col-12 col-md-5 mt-4 d-lg-flex justify-content-center card-link sm-slide">
+                                <div class="card rounded-4 s2-cards">
+                                    <img src="popa.jfif" class="card-img-top s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        Mount Popa
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- slide-seven -->
+                        <div class="carousel-item">
+                            <a href="#"
+                                class="col-lg-3 col-12 col-md-5 mt-4 d-lg-flex justify-content-center card-link sm-slide">
+                                <div class="card rounded-4 s2-cards">
+                                    <img src="saddar.jfif" class="card-img-top s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">
+                                        Saddar Cave
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- slide-eight -->
+                        <div class="carousel-item">
+                            <a href="#"
+                                class="col-lg-3 col-12 col-md-5 mt-4 d-lg-flex justify-content-center card-link sm-slide">
+                                <div class="card rounded-4 s2-cards">
+                                    <img src="ubein1.jfif" class="card-img-top s2-card-img" alt="">
+                                    <div class="cardHeading card-img-overlay">U Bein Bridge</div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev p-0 m-0" type="button" data-bs-target="#slide-sm-s1"
+                        data-bs-slide="prev">
+                        <span class="" aria-hidden="true">
+                        </span>
+                    </button>
+                    <button class="carousel-control-next p-0 m-0" type="button" data-bs-target="#slide-sm-s1"
+                        data-bs-slide="next">
+                        <span class="" aria-hidden="true">
+                        </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!------------------------------------------------------------------------------------------------------------------------->
+
+
+
+    <!------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- section-three -->
+    <!-- <div class="container-fluid mt-5" id="section-3">
+
+        <div class="container">
+
+        
+            <div class="s2-heading-con container">
+                <p class="text-secondary bold-text sub-sm-headings">PLAN</p>
+                <h2 class="bold-text sub-lg-headings">Booking</h2>
+            </div>
+
+            <form action="" class="mx-5 bg-white mt-3">
+                <div class="row border rounded-3 p-3">
+
+                    <div class="col-12 col-lg">
+                        <label class="form-label" for="cities">Cities</label>
+                        <select class="form-select" name="" id="cities">
+                            <option value="">Yangon</option>
+                            <option value="">Mandalay</option>
+                            <option value="">Naypyidaw</option>
+                            <option value="">Old Bagan</option>
+                            <option value="">Hpa-an</option>
+                            <option value="">Mawlamine</option>
+                            <option value="">Pyin Oo Lwin</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-lg">
+                        <label class="form-label" for="transport">Transportation</label>
+                        <select class="form-select" name="" id="transport">
+                            <option value="">Air</option>
+                            <option value="">Bus</option>
+                            <option value="">Train</option>
+                            <option value="">Boat</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-lg">
+                        <label class="form-label" for="plan">Class</label>
+                        <select class="form-select" name="" id="plan">
+                            <option value="">High-end Class</option>
+                            <option value="">High Class</option>
+                            <option value="">Normal Class</option>
+                            <option value="">Budget Class</option>
+                        </select>
+                    </div>
+
+                    <div class="col-12 col-lg">
+                        <label class="form-label" for="poeple">People</label>
+                        <input type="number" name="" class="form-control" id="poeple">
+                    </div>
+
+                    <div class="col-12 col-lg">
+                        <button class="btn btn-outline-primary w-100 text-center" id="book">Book</button>
+                    </div>
+
+                </div>
+
+                <table class="table mt-5">
+                    <tbody id="ticket">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+
+    </div> -->
+
+
+    <!-- footer -->
+    <footer class="container-fluid footerCon">
+        <div class="">
+
+
+            <!-- <div class="row mt-3 alignCenter">
+                <div class="col-12 col-lg-4"></div>
+                <div class="col-12 col-lg-4 row">
+                    <input type="text" class="form-control mx-2 col footer-form" name="" id=""
+                        placeholder="example@gmail.com">
+                    <button class="btn btn-primary mx-2 col footer-form">Click Me</button>
+                </div>
+                <div class="col-4"></div>
+            </div> -->
+
+            <div class="row mt-5 alignCenter">
+
+                <div class="col-12 text-start col-lg ms-lg-5 ms-0 mt-5 mt-lg-0 d-none d-lg-inline-block">
+                    <h4 class="footer-hdg">Heading</h4>
+                    <p class="created-footer">Lorem, ipsum dolor sit amet consectetu</p>
+                    <div class="icons-con d-lg-inline-block d-none">
+                        <a href="#" class="icons-footer"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#" class="icons-footer"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" class="icons-footer"><i class="fa-brands fa-discord"></i></a>
+                        <a href="#" class="icons-footer"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-4 text-start col-lg ms-lg-5 mt-lg-0 mt-2">
+                    <ul class="ulFooter">
+                        <li class="li-footer">
+                            <p class="footer-link-heading">Link</p>
+                        </li>
+                        <li class="li-footer"><a href="#">Home</a></li>
+                        <li class="li-footer"><a href="#">About</a></li>
+                        <li class="li-footer"><a href="#">Contact</a></li>
+                        <li class="li-footer"><a href="#">Contents</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4 text-start col-lg ms-lg-5 mt-lg-0 mt-2">
+                    <ul class="ulFooter">
+                        <li class="li-footer">
+                            <p class="footer-link-heading">Support</p>
+                        </li>
+                        <li class="li-footer"><a href="#">Reference</a></li>
+                        <li class="li-footer"><a href="#">Features</a></li>
+                        <li class="li-footer"><a href="#">Source Code</a></li>
+                        <li class="li-footer"><a href="#">Report</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-4 text-start col-lg ms-lg-5 mt-lg-0 mt-2">
+                    <ul class="ulFooter">
+                        <li class="li-footer">
+                            <p class="footer-link-heading">Contact Us</p>
+                        </li>
+                        <li class="li-footer"><a href="#">505-842-5662</a></li>
+                        <li class="li-footer"><a href="#">Reference</a></li>
+                        <li class="li-footer"><a href="#">Features</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr class="mt-4 hr">
+            <div class="row">
+                <p class="ms-4 copyright text-secondary col-12 col-lg text-sm-center text-lg-start">
+                    Copyright © 2022 -
+                    All
+                    Right Reserved</p>
+                <div class="col-12 text-center mb-3 d-inline-block d-lg-none">
+                    <a href="#" class="icons-footer"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="icons-footer"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#" class="icons-footer"><i class="fa-brands fa-discord"></i></a>
+                    <a href="#" class="icons-footer"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="#"
+                    class="terms text-secondary col-12 col-lg text-sm-center text-lg-start me-lg-4 me-0 d-lg-flex d-none">Terms
+                    of use
+                    |
+                    Policy</a>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="general.js"></script>
+</body>
+
+</html>
